@@ -9,7 +9,6 @@ const SOURCES = {
   horizon: 'prediksi_multi_horizon.csv',
   historis: 'feature_historis.csv',
   evaluasi: 'evaluasi_model.csv',
-  distribusiRisiko: 'eda_distribusi_risiko.csv',
   faktorDominan: 'eda_faktor_dominan.csv',
   bulanRawan: 'eda_bulan_rawan.csv',
   trenTahunan: 'eda_tren_tahunan.csv',
