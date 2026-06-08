@@ -12,7 +12,6 @@ const SOURCES = {
   distribusiRisiko: 'eda_distribusi_risiko.csv',
   faktorDominan: 'eda_faktor_dominan.csv',
   bulanRawan: 'eda_bulan_rawan.csv',
-  risikoPerTahun: 'eda_risiko_per_tahun.csv',
   trenTahunan: 'eda_tren_tahunan.csv',
   topWilayah: 'eda_top_wilayah_high_risk.csv',
   prioritas2026: 'eda_prioritas_2026.csv',
