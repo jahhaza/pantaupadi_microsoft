@@ -64,6 +64,25 @@ export default function PantauTrend() {
           2018 hingga 2026 — untuk membedakan kondisi anomali dari pola berulang.
         </p>
       </div>
+      <div className="list-container" style={{ marginTop: 20 }}>
+        <h3><i className="fas fa-chart-column" /> Komposisi Risiko per Tahun (%)</h3>
+        <ResponsiveContainer width="100%" height={280}>
+          <BarChart data={risikoPerTahun}>
+            <CartesianGrid strokeDasharray="3 3" vertical={false} />
+            <XAxis dataKey="tahun" />
+            <YAxis unit="%" />
+            <Tooltip />
+            <Legend />
+            <Bar dataKey="low" name="Aman" stackId="a" fill={RISK_COLORS.low} />
+            <Bar dataKey="medium" name="Waspada" stackId="a" fill={RISK_COLORS.medium} />
+            <Bar dataKey="high" name="Kritis" stackId="a" fill={RISK_COLORS.high} />
+          </BarChart>
+        </ResponsiveContainer>
+        <p className="section-note">
+          <i className="fas fa-arrow-trend-down" /> Tren membaik: proporsi wilayah high-risk turun
+          signifikan dari 2018 (51%) menuju 2026.
+        </p>
+      </div>
 
       <div className="grid-2" style={{ marginTop: 20 }}>
         <div className="list-container">
